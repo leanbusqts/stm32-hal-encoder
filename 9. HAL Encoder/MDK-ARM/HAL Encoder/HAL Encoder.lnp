@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"hal encoder\startup_stm32f103xb.o"
+"hal encoder\stm32f1xx_it.o"
+"hal encoder\main.o"
+"hal encoder\stm32f1xx_hal_msp.o"
+"hal encoder\system_stm32f1xx.o"
+"hal encoder\stm32f1xx_hal_pwr.o"
+"hal encoder\stm32f1xx_hal_flash.o"
+"hal encoder\stm32f1xx_hal_tim_ex.o"
+"hal encoder\stm32f1xx_hal_flash_ex.o"
+"hal encoder\stm32f1xx_hal_gpio_ex.o"
+"hal encoder\stm32f1xx_hal_rcc.o"
+"hal encoder\stm32f1xx_hal_gpio.o"
+"hal encoder\stm32f1xx_hal_rcc_ex.o"
+"hal encoder\stm32f1xx_hal_tim.o"
+"hal encoder\stm32f1xx_hal_cortex.o"
+"hal encoder\stm32f1xx_hal_dma.o"
+"hal encoder\stm32f1xx_hal.o"
+"hal encoder\stm32f1xx_hal_uart.o"
+--library_type=microlib --strict --scatter "HAL Encoder\HAL Encoder.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HAL Encoder.map" -o "HAL Encoder\HAL Encoder.axf"
